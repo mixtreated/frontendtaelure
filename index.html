@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>tealurev1.0</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+        <link rel="stylesheet" href="stylesheets/style.css" type="text/css" media="screen">
+
+        <!-- slider menu css/js -->
+        <script src="js/modernizr.custom.js"></script>
+
+        <link rel="stylesheet" type="text/css" href="stylesheets/component.css" />
+
+    <style type="text/css">
+
+      ul#tabs li { display: inline; }
+      ul#tabs li a.selected {border-bottom-style:solid;}
+      div.tabContent.hide { display: none; }
+    </style>
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>
+            $(function() {
+              $('a[href*=#]:not([href=#])').click(function() {
+                if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+                  var target = $(this.hash);
+                  target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+                  if (target.length) {
+                    $('html,body').animate({
+                      scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                  }
+                }
+              });
+            });
+        </script>
+
+    <script type="text/javascript">
+        //<![CDATA[
+
+        var tabLinks = new Array();
+        var contentDivs = new Array();
+
+        function init() {
+
+          var tabListItems = document.getElementById('tabs').childNodes;
+          for ( var i = 0; i < tabListItems.length; i++ ) {
+            if ( tabListItems[i].nodeName == "LI" ) {
+              var tabLink = getFirstChildWithTagName( tabListItems[i], 'A' );
+              var id = getHash( tabLink.getAttribute('href') );
+              tabLinks[id] = tabLink;
+              contentDivs[id] = document.getElementById( id );
+            }
+          }
+
+          var i = 0;
+
+          for ( var id in tabLinks ) {
+            tabLinks[id].onclick = showTab;
+            tabLinks[id].onfocus = function() { this.blur() };
+            if ( i == 0 ) tabLinks[id].className = 'selected';
+            i++;
+          }
+
+
+          var i = 0;
+
+          for ( var id in contentDivs ) {
+            if ( i != 0 ) contentDivs[id].className = 'tabContent hide';
+            i++;
+          }
+        }
+
+        function showTab() {
+          var selectedId = getHash( this.getAttribute('href') );
+
+          for ( var id in contentDivs ) {
+            if ( id == selectedId ) {
+              tabLinks[id].className = 'selected';
+              contentDivs[id].className = 'tabContent';
+            } else {
+              tabLinks[id].className = '';
+              contentDivs[id].className = 'tabContent hide';
+            }
+          }
+
+          return false;
+        }
+
+        function getFirstChildWithTagName( element, tagName ) {
+          for ( var i = 0; i < element.childNodes.length; i++ ) {
+            if ( element.childNodes[i].nodeName == tagName ) return element.childNodes[i];
+          }
+        }
+
+        function getHash( url ) {
+          var hashPos = url.lastIndexOf ( '#' );
+          return url.substring( hashPos + 1 );
+        }
+
+        //]]>
+    </script>
+
+
+
+
+
+    </head>
+    <body class="cbp-spmenu-push" onload="init()">
+
+        <nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="cbp-spmenu-s1">
+
+                    <svg id="hideLeft" class="inline-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                         width="91.23px" height="75.08px" viewBox="0 0 91.23 75.08" enable-background="new 0 0 91.23 75.08" xml:space="preserve">
+                     <g class="svg-menu-toggle">
+                    <path d="M77.375,69.583c-2.733,2.733-7.166,2.733-9.899,0L13.572,15.68c-2.734-2.734-2.734-7.166,0-9.899l0.283-0.283
+                        c2.733-2.733,7.166-2.734,9.899,0L77.658,59.4c2.733,2.733,2.733,7.166,0,9.899L77.375,69.583z"/>
+                    <path d="M13.572,69.3c-2.733-2.733-2.733-7.166,0-9.899L67.475,5.497c2.733-2.734,7.166-2.733,9.899,0l0.283,0.283
+                        c2.734,2.734,2.734,7.166,0,9.899L23.755,69.583c-2.733,2.733-7.166,2.733-9.899,0L13.572,69.3z"/>
+                    </g>
+                    </svg>
+
+            <h3>Menu</h3>
+            <a href="#slide2">About</a>
+            <a href="#slide3">Selection of tea</a>
+            <a href="#">Shop</a>
+            <a href="#">Contact</a>
+            <a href="#"></a>
+            <a href="#"></a>
+        </nav>
+
+        <div class="container">
+
+            <div class="main">
+                <section>
+                    <div id="showLeft">
+                        <svg class="inline-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                             width="91.23px" height="75.08px" viewBox="0 0 91.23 75.08" enable-background="new 0 0 91.23 75.08" xml:space="preserve">
+                         <g class="svg-menu-toggle">
+                        <path class="bar" fill="#DDDDDD" d="M90.73,7.9c0,3.866-3.134,7-7,7H7.5c-3.866,0-7-3.134-7-7V7.5c0-3.866,3.134-7,7-7h76.23
+                            c3.866,0,7,3.134,7,7V7.9z"/>
+                        <path class="midline" fill="#DDDDDD" d="M90.73,37.74c0,3.866-3.134,7-7,7H7.5c-3.866,0-7-3.134-7-7v-0.4c0-3.866,3.134-7,7-7h76.23
+                            c3.866,0,7,3.134,7,7V37.74z"/>
+                        <path class="bar" fill="#DDDDDD" d="M90.73,67.58c0,3.866-3.134,7-7,7H7.5c-3.866,0-7-3.134-7-7v-0.4c0-3.865,3.134-7,7-7h76.23
+                            c3.866,0,7,3.135,7,7V67.58z"/>
+                        </g>
+                        </svg>
+                    </div>
+                </section>
+
+            </div>
+        </div>
+        <section class="slide1">
+        <img class="logo" src="img/logo4.png" alt="logo"/>
+        <h1>Tealure</h1>
+        <p>Tealure imports an authentic Nepali tea grown in the pure air of the Himalayas.</p>   
+                        <video autoplay loop poster="img/topvid.jpg" id="bgvid">
+                            <source src="img/topvid.webm" type="video/webm">
+                            <source src="img/topvid.mp4" type="video/mp4">
+                        </video>
+                        <a href="#slide2" class="button">Explore</a>
+        </section>
+
+        <section id="slide2" class="slide2">
+            <h1>Tea & it's journey</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+            <ul class="journey">
+                <li><img class="jo" src="img/jo.png" alt="logo"/><p>Lorem</p></li>
+                <li><img class="jo2" src="img/jo2.png" alt="logo"/><p>Veniam</p></li>
+                <li><img class="jo3" src="img/jo3.png" alt="logo"/><p>Exercitation</p></li>
+                <li><img class="jo4" src="img/jo4.png" alt="logo"/><p>Laboris</p></li>
+            </ul>
+        </section>
+
+
+        <section id="slide3" class="slide3">
+            <h1>Explore the taste</h1>
+
+                <div class="folds">
+                    <ul id="tabs">
+                      <li><a href="#tblack"><img src="img/tea/tb.png"><p>Black</p></a></li>
+                      <li><a href="#tgreen"><img src="img/tea/tgr.png"><p>Green</p></a></li>
+                      <li><a href="#temerald"><img src="img/tea/tem.png"><p>Emerald</p></a></li>                      
+                      <li><a href="#twhite"><img src="img/tea/twh.png"><p>White</p></a></li>
+                      <li><a href="#tgold"><img src="img/tea/tgo.png"><p>Gold</p></a></li>
+                      <li><a href="#truby"><img src="img/tea/tru.png"><p>Ruby</p></a></li>
+                    </ul>
+
+                    <div class="tabContent" id="tblack">
+                      <h2>Black tea</h2>
+                      <div class="teatxt">
+                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                      </div>
+                      <div class="teaside">
+                        <img src="img/tea/teapic.jpg">
+                        <a href="#" class="button2 but">Shop</a>
+                      </div>
+                    </div>
+
+                    <div class="tabContent" id="tgreen">
+                      <h2>Himalayan green</h2>
+                      <div class="teatxt">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration</p>
+                      </div>
+                      <div class="teaside">
+                        <img src="img/tea/teapic.jpg">
+                        <a href="#" class="button2 but">Shop</a>
+                      </div>
+                    </div>
+
+                    <div class="tabContent" id="temerald">
+                      <h2>Emerald tea</h2>
+                      <div class="teatxt">
+                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                      </div>
+                      <div class="teaside">
+                        <img src="img/tea/teapic.jpg">
+                        <a href="#" class="button2 but">Shop</a>
+                      </div>
+                    </div>
+
+                    <div class="tabContent" id="twhite">
+                      <h2> White himalayan tea</h2>
+                      <div class="teatxt">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration</p>
+                      </div>
+                      <div class="teaside">
+                        <img src="img/tea/teapic.jpg">
+                        <a href="#" class="button2 but">Shop</a>
+                      </div>
+                    </div>
+
+                    <div class="tabContent" id="tgold">
+                      <h2>Gold breakfast tea</h2>
+                      <div class="teatxt">
+                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                      </div>
+                      <div class="teaside">
+                        <img src="img/tea/teapic.jpg">
+                        <a href="#" class="button2 but">Shop</a>
+                      </div>
+                    </div>
+
+
+                    <div class="tabContent" id="truby">
+                      <h2>Black ruby tea</h2>
+                      <div class="teatxt">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration</p>
+                      </div>
+                      <div class="teaside">
+                        <img src="img/tea/teapic.jpg">
+                        <a href="#" class="button2 but">Shop</a>
+                      </div>
+                    </div>
+                </div>
+
+        </section>
+
+        <section class="slide4">
+            <h1>Become an explorer</h1>
+                <a href="#" class="button but">Subscribe for tea</a>
+                <a href="#" class="button but">Browse shop</a>
+
+        </section>
+        <section class="slide5">
+            <h1>Our story</h1>
+        </section>
+
+        <section class="slide6">
+            <p>First steps to Nepal were directed by completely different intention than it turned out later on. Data collection for my Master’s theses put me on to the exciting journey of exploring the superb tea and getting closer to a Nepali farmers community. </p>
+
+             <p>I have engaged in Nepal’s people everyday life in the breath-taking scenery of the Ilam reagion and admired by the taste of highland tea. However, on another side I sow the challenging conditions tea people face on daily basis, while trying to survive as tea workers and growers in Nepal. This story was a foundation to consider possible engagement to bring a positive change into the lives of these genuine people.</p>
+        </section>
+
+        <section class="slide7">
+            <h1>Stay tuned</h1>
+                <a href="#" class="button but">Sign up for newsletter</a>
+
+        </section>
+
+      <footer id="foot">
+
+        <div class="contact_footer">
+          <a href="mailto:mikolaj@penguinzeppelin.com"><img src="http://penguinzeppelin.com/img/mail.png"></a>
+          <h3>info@tealure.com</h3>
+        </div>
+        <div class="social">
+          <a href="https://www.behance.net/mixtreated"><img src="http://penguinzeppelin.com/img/behance.png"></a>
+          <a href="https://www.linkedin.com/pub/miko%C5%82aj-matyaszczyk/50/4a2/b71"><img src="http://penguinzeppelin.com/img/linkedin.png"></a>
+          <a href="http://www.pinterest.com/mixtreated/"><img src="http://penguinzeppelin.com/img/pinterest.png"></a>          <a href="https://www.behance.net/mixtreated"><img src="http://penguinzeppelin.com/img/behance.png"></a>
+          <a href="https://www.linkedin.com/pub/miko%C5%82aj-matyaszczyk/50/4a2/b71"><img src="http://penguinzeppelin.com/img/linkedin.png"></a>
+
+        </div>
+
+        <div class="sign">
+          <p>&#169; Tealure 2015</p>
+        </div>
+      </footer>
+
+
+
+        <script src="js/classie.js"></script>
+        <script>
+            var menuLeft = document.getElementById( 'cbp-spmenu-s1' ),
+                showLeft = document.getElementById( 'showLeft' ),
+                hideLeft = document.getElementById( 'hideLeft' ),
+                body = document.body;
+
+            showLeft.onclick = function() {
+                classie.toggle( this, 'active' );
+                classie.toggle( menuLeft, 'cbp-spmenu-open' );
+                disableOther( 'showLeft' );
+            };
+
+            hideLeft.onclick = function() {
+                classie.toggle( this, 'active' );
+                classie.toggle( menuLeft, 'cbp-spmenu-open' );
+                disableOther( 'hideLeft' );
+            };
+
+            function disableOther( button ) {
+                if( button !== 'hideLeft' ) {
+                    classie.toggle( showLeft, 'disabled' );
+                };
+            }
+        </script>
+    </body>
+</html>

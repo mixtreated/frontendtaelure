@@ -1,0 +1,413 @@
+/* line 106, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/typography/_vertical_rhythm.scss */
+html {
+  font-size: 100%;
+  line-height: 1.5em;
+}
+
+/* line 4, ../sass/style.scss */
+body {
+  width: 100%;
+  margin: 0%;
+  margin-top: -1px;
+  padding-top: 1px;
+  overflow-x: hidden;
+  background-color: #000;
+}
+/* line 12, ../sass/style.scss */
+body .slide1 {
+  min-height: 650px;
+  width: 100%;
+  margin-top: -1px;
+  padding-top: 1px;
+}
+/* line 16, ../sass/style.scss */
+body .slide1 video#bgvid {
+  position: absolute;
+  opacity: 0.5;
+  left: 0;
+  top: 0;
+  min-width: 100%;
+  min-height: 20%;
+  z-index: -100;
+}
+/* line 23, ../sass/style.scss */
+body .slide1 h1 {
+  font: 500% "Ananda Namaste";
+  width: 100%;
+  margin-top: -2px;
+  text-align: center;
+  color: white;
+}
+/* line 28, ../sass/style.scss */
+body .slide1 img {
+  width: 20%;
+  margin: 5% auto 0 auto;
+  display: block;
+}
+/* line 31, ../sass/style.scss */
+body .slide1 p {
+  width: 65%;
+  text-align: center;
+  color: #fff;
+  margin: 4% auto 4% auto;
+  display: block;
+  font: 150% Source Sans Pro, sans-serif;
+}
+/* line 37, ../sass/style.scss */
+body .slide1 a {
+  margin: 0 auto;
+  width: 10%;
+  display: block;
+}
+/* line 42, ../sass/style.scss */
+body .slide2 {
+  margin-top: -1px;
+  padding-top: 1px;
+  width: 100%;
+  min-height: 600px;
+  background-color: white;
+}
+/* line 48, ../sass/style.scss */
+body .slide2 h1 {
+  font: 300% "Jaapokki";
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+/* line 52, ../sass/style.scss */
+body .slide2 p {
+  width: 75%;
+  text-align: center;
+  color: #000;
+  margin: 4% auto 4% auto;
+  display: block;
+  font: 150% Source Sans Pro, sans-serif;
+}
+/* line 59, ../sass/style.scss */
+body .slide2 ul {
+  width: 100%;
+  margin-bottom: 10%;
+}
+/* line 61, ../sass/style.scss */
+body .slide2 ul li {
+  list-style-type: none;
+  width: 23%;
+  display: inline-table;
+}
+/* line 64, ../sass/style.scss */
+body .slide2 ul li img {
+  width: 80%;
+  padding: 3%;
+  display: block;
+  margin: 0 auto;
+}
+/* line 68, ../sass/style.scss */
+body .slide2 ul li p {
+  width: 75%;
+  text-align: center;
+  color: #000;
+  margin: 0% auto;
+  display: block;
+  font: 150% Source Sans Pro, sans-serif;
+}
+/* line 79, ../sass/style.scss */
+body .slide3 {
+  background-image: url(../img/slide33.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin-top: -1px;
+  padding-top: 1px;
+  width: 100%;
+  min-height: 800px;
+  background-color: white;
+}
+/* line 89, ../sass/style.scss */
+body .slide3 h1 {
+  font: 300% "Jaapokki";
+  width: 100%;
+  text-align: center;
+  color: #fff;
+}
+/* line 94, ../sass/style.scss */
+body .slide3 ul li {
+  display: inline-table;
+  margin: 0% 3.6%;
+}
+/* line 96, ../sass/style.scss */
+body .slide3 ul li a {
+  text-decoration: none;
+  display: inline-table;
+  text-align: center;
+  color: white;
+  font: 150% "Jaapokki";
+}
+/* line 102, ../sass/style.scss */
+body .slide3 ul li a p {
+  line-height: 1px;
+}
+/* line 106, ../sass/style.scss */
+body .slide3 .tabContent {
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  margin: 0 auto;
+  display: block;
+  padding: 2% 2% 6% 2%;
+  width: 85%;
+  background-color: #fff;
+}
+/* line 113, ../sass/style.scss */
+body .slide3 .tabContent h2 {
+  font: 200% "Jaapokki";
+  width: 100%;
+  line-height: 1px;
+  text-align: center;
+  color: #000;
+}
+/* line 118, ../sass/style.scss */
+body .slide3 .tabContent .teatxt {
+  width: 60%;
+  display: inline-block;
+}
+/* line 120, ../sass/style.scss */
+body .slide3 .tabContent .teatxt p {
+  font: 120% Source Sans Pro, sans-serif;
+  width: 90%;
+}
+/* line 123, ../sass/style.scss */
+body .slide3 .tabContent .teaside {
+  display: inline-block;
+  margin-left: 10%;
+  vertical-align: -2em;
+  width: 25%;
+}
+/* line 127, ../sass/style.scss */
+body .slide3 .tabContent .teaside img {
+  width: 100%;
+}
+/* line 128, ../sass/style.scss */
+body .slide3 .tabContent .teaside .but {
+  margin: 0 auto;
+  display: block;
+}
+/* line 138, ../sass/style.scss */
+body .slide4 {
+  background-image: url(../img/slide33.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin-top: -1px;
+  padding-top: 1px;
+  width: 100%;
+  min-height: 400px;
+}
+/* line 147, ../sass/style.scss */
+body .slide4 h1 {
+  font: 300% "Jaapokki";
+  width: 100%;
+  line-height: 1em;
+  text-align: center;
+  color: #fff;
+}
+/* line 152, ../sass/style.scss */
+body .slide4 .but {
+  width: 20%;
+  margin: 3% auto;
+  display: block;
+}
+/* line 157, ../sass/style.scss */
+body .slide5 {
+  background-color: white;
+  margin-top: -1px;
+  padding-top: 1px;
+  width: 100%;
+  min-height: 150px;
+}
+/* line 163, ../sass/style.scss */
+body .slide5 h1 {
+  font: 300% "Jaapokki";
+  width: 100%;
+  margin-top: 0px;
+  padding-top: 3%;
+  text-align: center;
+  color: #000;
+}
+/* line 171, ../sass/style.scss */
+body .slide6 {
+  background-color: white;
+  margin-top: -1px;
+  padding-top: 1px;
+  width: 100%;
+  min-height: 400px;
+}
+/* line 178, ../sass/style.scss */
+body .slide6 p {
+  width: 80%;
+  text-align: left;
+  color: #000;
+  margin: 0% auto 4% auto;
+  font: 150% Source Sans Pro, sans-serif;
+}
+/* line 187, ../sass/style.scss */
+body .slide7 {
+  background-image: url(../img/story.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin-top: -1px;
+  padding-top: 1px;
+  width: 100%;
+  min-height: 250px;
+}
+/* line 196, ../sass/style.scss */
+body .slide7 h1 {
+  font: 300% "Jaapokki";
+  width: 100%;
+  line-height: 1em;
+  text-align: center;
+  color: #fff;
+}
+/* line 201, ../sass/style.scss */
+body .slide7 .but {
+  width: 20%;
+  margin: 3% auto;
+  display: block;
+}
+/* line 207, ../sass/style.scss */
+body footer {
+  background-color: #fff;
+  width: 100%;
+  color: #000;
+  border-top: solid;
+  border-top-width: 1px;
+  border-color: #000;
+}
+/* line 213, ../sass/style.scss */
+body footer .contact_footer {
+  width: 30%;
+  margin-left: 5%;
+  margin-right: 2%;
+  color: #000;
+  display: inline-block;
+}
+/* line 218, ../sass/style.scss */
+body footer .contact_footer img {
+  width: 7%;
+  display: inline-block;
+}
+/* line 220, ../sass/style.scss */
+body footer .contact_footer img:hover {
+  background-color: #eee;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  border-radius: 5px;
+}
+/* line 224, ../sass/style.scss */
+body footer .contact_footer h3 {
+  display: inline-block;
+  width: 70%;
+  padding-left: 1em;
+  font: 150% Source Sans Pro, sans-serif;
+}
+/* line 232, ../sass/style.scss */
+body footer .social {
+  width: 50%;
+  display: inline-block;
+}
+/* line 234, ../sass/style.scss */
+body footer .social img {
+  margin-right: 10%;
+  padding: 0% 1% 0% 1%;
+  border-radius: 5px;
+  width: 5%;
+}
+/* line 239, ../sass/style.scss */
+body footer .social img:hover {
+  -webkit-transition: 0.5s;
+  border-radius: 5px;
+  transition: 0.5s;
+  background-color: red;
+}
+/* line 247, ../sass/style.scss */
+body footer .sign {
+  width: 100%;
+  padding: 0.2%;
+  background-color: #fff;
+}
+/* line 250, ../sass/style.scss */
+body footer .sign p {
+  width: 100%;
+  color: #000;
+  text-align: center;
+  font: 100% Source Sans Pro, sans-serif;
+}
+
+/* line 264, ../sass/style.scss */
+#showLeft {
+  margin-left: 2%;
+  position: fixed;
+}
+/* line 266, ../sass/style.scss */
+#showLeft .inline-svg {
+  width: 40%;
+}
+
+/* line 268, ../sass/style.scss */
+#hideLeft {
+  margin-left: 10%;
+  width: 20%;
+}
+/* line 270, ../sass/style.scss */
+#hideLeft .inline-svg {
+  width: 2%;
+}
+
+/* line 275, ../sass/style.scss */
+.button {
+  text-align: center;
+  font: 120% Source Sans Pro, sans-serif;
+  color: #fff;
+  text-decoration: none;
+  padding: 1em 3em;
+  border-style: solid;
+  border-width: 1px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+/* line 284, ../sass/style.scss */
+.button:hover {
+  color: #000;
+  transition: 0.5s;
+  border-color: #fff;
+  background-color: #fff;
+  text-decoration: none;
+}
+
+/* line 294, ../sass/style.scss */
+.button2 {
+  text-align: center;
+  font: 120% Source Sans Pro, sans-serif;
+  color: #000;
+  text-decoration: none;
+  padding: 1em 3em;
+  border-style: solid;
+  border-width: 1px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+/* line 303, ../sass/style.scss */
+.button2:hover {
+  color: #fff;
+  transition: 0.5s;
+  border-color: #000;
+  background-color: #000;
+  text-decoration: none;
+}
+
+/*@include font-face("Jaapokki", font-files("bgrove.ttf", "bgrove.otf"));
+@include font-face("Ananda Namaste", font-files("bgrove.ttf", "bgrove.otf"));
+@include font-face("Jaapokki", font-files("bgrove.ttf", "bgrove.otf"));
+*/
